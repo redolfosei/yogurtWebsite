@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout B</title>
+    <!-- Bootstrap CDN CSS only-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .box {
+            background-color: tomato;
+            min-height: 200px; 
+            margin: 20px 10px; 
+            padding: 20px; 
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px; 
+        }
+
+        .bg1 {
+            background-color: lightslategray;
+        } 
+
+    </style>
+    
+    <header class="container-fluid bg1">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4"> <!--This can be done with % eg.. w-25% which means a width of 25%-->
+                    <div class="box">
+                        Logo
+                    </div>
+                </div>
+                <nav class="col">
+                    <div class="box">
+                        Nav 
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum ut eligendi et cumque doloribus quis similique velit unde culpa, maxime sed repellendus. Officiis facilis sit nesciunt laboriosam atque totam ipsum, ullam accusamus magnam reprehenderit, ipsa, dolorem commodi itaque tenetur neque fugiat ut esse eius. Nesciunt cupiditate iusto saepe possimus aliquid velit voluptatem blanditiis voluptatibus eum iure officiis maiores, voluptate odit beatae temporibus distinctio nihil suscipit atque eaque culpa ut provident sint nobis. Sint officiis eum delectus, facilis eveniet debitis hic dolor totam odit exercitationem et itaque quibusdam nemo in laborum vitae a. Delectus ut quisquam omnis iste illum? A.</p>
+
+                    <div class="row">
+                        <div class="col box2">
+                            Nested 1
+                        </div>
+                        <div class="col box2">
+                            Nested 2
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="box">
+                    Feature1
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Feature2
+                </div>
+            </div>
+            <div class="col">
+                <div class="box">
+                    Feature3
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

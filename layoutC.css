@@ -1,0 +1,18 @@
+
+        .box {
+            background-color: tomato;
+            min-height: 200px; 
+            margin: 20px 10px; 
+            padding: 20px; 
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px; 
+        }
+
+        .bg1 {
+            background-color: lightslategray;
+        } 
