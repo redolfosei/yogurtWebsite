@@ -14,57 +14,85 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Beginning of first Container -->
     <div class="container">
+
         <!-- Nav bar  -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
             <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            
+              <!-- Logo -->
+              <nav class="navbar">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="imgs/logo-dans-meat-yogurt.svg" href="index.html" alt="Bootstrap" width="100" height="auto">
+                  </a>
+                </div>
+              </nav>  
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
+
+            <!-- Dropdown -->
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-end">
+                    <li class="nav-item btn btn-outline-light me-4" style="width: 130px;">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown btn btn-outline-light me-4" style="width: 130px;">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Flavors
+                        </a>
+                        <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="#">Vanilla</a></li>
+                        <li><a class="dropdown-item" href="#">Stawberry</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Chocolate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item btn btn-outline-light" style="width: 130px;">
+                      <a class="nav-link text-white" href="#">About Us</a>
+                    </li>
                 </ul>
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
             </div>
             </div>
         </nav>
 
         <!-- Jumbotron -->
         <div class="jumbotron">
-          <h1 class="display-4">Welcome to RedolFia Yogurt</h1>
-          <p class="lead">Buy what you want </p>
-          <hr class="my-4">
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+
+          <div class="row">
+            <div class="col-md-7 text-center text-md-start">
+              <h1 class="display-3 text-white mt-5">Thick & Creamy!</h1>
+              <p class="lead"> With real meat chunks! Buy from our list of flavors </p>
+
+              <!-- button homepg -->
+              <p class="lead">
+                <a class="btn btn-outline-light btn-lg mt-3" href="#" role="button" style="width: 130px;">Flavors</a>
+              </p>
+            </div>
+
+            <div class="col-md-5">
+              <img src="imgs/hero1.png" class="img-fluid mt-5" alt="redolfia's yogurt">
+            </div>
+          </div>
+          </div>
+
+                  <!-- testimonial form top distributor -->
+        <div class="row mt-5">
+          <div class="col-md-4">
+              <img class="img-fluid" src="imgs/distributor.jpg" alt="top distributor">
+          </div>
+          <div class="col-md-8 bg-light p-5 border border-lg border-dark rounded-end">
+            <h2>Our Top Distributor</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat laborum exercitationem suscipit velit, at amet eum doloremque omnis architecto minus porro nulla quibusdam molestiae itaque mollitia quidem laudantium alias laboriosam aspernatur veniam aperiam hic maiores beatae quisquam? Voluptate et, voluptatum quibusdam, delectus dolore accusamus cumque fuga dolores repudiandae, est doloribus eum? Non, corporis incidunt illo architecto quibusdam ipsum excepturi beatae harum odio minima laboriosam mollitia nemo expedita ullam magnam nam vitae. Culpa consequatur dolorem, id ut exercitationem obcaecati mollitia inventore. Deleniti perferendis accusamus natus laboriosam explicabo cupiditate labore sint voluptatibus assumenda quibusdam maiores debitis ab molestias, odio aspernatur non. Optio.</p>
+          </div>
         </div>
 
         <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-bs-ride="true">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -91,29 +119,39 @@
             </button>
           </div>
 
-    </div>
+              <!-- Cards -->
+          <div class="card-group">
+            <div class="card" style="width: 18rem;">
+              <img src="imgs/product1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, similique nesciunt? Earum at iste officiis, aperiam maiores nemo libero ab laboriosam. Molestiae voluptas est eum vel ad, corrupti inventore dicta ipsam similique exercitationem cupiditate quisquam earum consequatur deleniti, eligendi perspiciatis.</p>
+                <a href="#" class="btn btn-primary">Chicken</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="imgs/product2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime dolorum dicta nemo. Quae officia rem earum cupiditate, corporis molestiae commodi, architecto doloribus voluptatibus voluptatem dolores consequatur, nobis ex necessitatibus neque? Unde ab accusamus omnis quae cum laboriosam delectus ut nobis!</p>
+                <a href="#" class="btn btn-primary streched-link">Fish</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="imgs/product3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas et aut, laborum animi fugit voluptas deserunt non corrupti distinctio nobis architecto sit rem earum! Totam consequuntur quas, modi eum voluptates reiciendis dolor quasi excepturi. Accusamus quibusdam ipsam autem voluptatibus exercitationem?</p>
+                <a href="#" class="btn btn-primary">Beef</a>
+              </div>
+            </div>
+          </div>
 
-    <!-- Cards -->
-    <div class="card" style="width: 18rem;">
-      <img src="imgs/product1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
+    </div> 
+    <!-- End of first Container -->
 
-    <div class="card" style="width: 18rem;">
-      <img src="imgs/product2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="imgs/product3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
+
+
+
+
 
 
 

@@ -6,7 +6,26 @@ body {
 
 h1 {
     font-family: 'Abril Fatface', cursive;
+   
 }
 
+/* This overides an already bootstrap class */
+.lead {
+    color: white;
+    font-size: 2.2rem; 
+}
+
+.btn-outline-light {
+    border-color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(0, 0, 0, 0.131);
+    color: white; 
+}
+
+.bgRemoved {
+    background-color: rgba(0, 0, 0, 0.099);
+}
 
 
